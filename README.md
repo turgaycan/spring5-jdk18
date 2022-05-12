@@ -60,13 +60,51 @@ response
   }
 }
 ```
+
 ### list with search filters
 
 request
 
+```json
+curl --request GET
+--url 'http://localhost:8080/api/rest/v10/employees?page=0&max=20'
+--header 'Authorization: Basic dHVyZ2F5OnRjMTIzNA=='
+--header 'Content-Type: application/json'
+--data '{
+"fullname":"turgay"
+}'
+```
 
 response
 
+```json lines
+{
+  "content": [
+    {
+      "id": 11,
+      "email": "turgay.can3@inomera.com",
+      "fullname": "Turgay Can",
+      "title": "Software Engineer",
+      "createDate": "2022-05-11T21:00:00.000+00:00"
+    },
+    {
+      "id": 1,
+      "email": "turgay.can@inomera.com",
+      "fullname": "Turgay Can",
+      "title": "Software Engineer",
+      "createDate": "2022-05-11T21:00:00.000+00:00"
+    }
+  ],
+  "totalElements": 2,
+  "pageSize": 20,
+  "pageNumber": 0,
+  "status": {
+    "code": "0",
+    "description": "No Error"
+  },
+  "txKey": "d76985aa66fb47398084d2d40d2955ba"
+}
+```
 
 ### list without search filters
 
