@@ -35,7 +35,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-security'
 
-    implementation 'org.apache.kafka:kafka-streams'
     implementation 'org.liquibase:liquibase-core'
     implementation 'org.projectlombok:lombok:1.18.20'
     runtimeOnly 'com.h2database:h2'
