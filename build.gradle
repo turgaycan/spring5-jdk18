@@ -5,8 +5,10 @@ plugins {
 }
 
 group = 'com.tcan.spring5.jdk18'
-version = '0.0.1'
-sourceCompatibility = '18'
+version = rootProject.file('VERSION').text.trim()
+sourceCompatibility = JavaVersion.VERSION_18
+
+println "Project: ${group}:${name}:${version}"
 
 repositories {
     mavenCentral()
