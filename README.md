@@ -11,17 +11,17 @@
 
 # build & push to image local or remote docker registry 
 
-use the release.sh script as below. we use semanting versioning.
+use the release.sh script as below. we use semantic versioning.
 
-MAJOR version when you make incompatible API changes,
-MINOR version when you add functionality in a backwards compatible manner, and
-PATCH version when you make backwards compatible bug fixes.
-
+    PATCH version when you make backwards compatible bug fixes,
+    MINOR version when you add functionality in a backwards compatible manner, and
+    MAJOR version when you make incompatible API changes.
+    
 ref : https://semver.org
 
-./release.sh patch #version 1.0.0 -> to be -> 1.0.1
-./release.sh minor #version 1.0.0 -> to be -> 1.1.0
-./release.sh major #version 1.0.0 -> to be -> 2.0.0
+    ./release.sh patch #version 1.0.0 -> to be -> 1.0.1
+    ./release.sh minor #version 1.0.0 -> to be -> 1.1.0
+    ./release.sh major #version 1.0.0 -> to be -> 2.0.0
 
 # The application tech stack
 
