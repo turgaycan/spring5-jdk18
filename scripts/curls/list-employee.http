@@ -1,0 +1,15 @@
+# curl --request GET
+#--url 'http://localhost:8080/api/rest/v10/employees?page=0&max=20'
+#--header 'Authorization: Basic dHVyZ2F5OnRjMTIzNA=='
+#--header 'Content-Type: application/json'
+#--data '{
+#
+#}'
+GET http://localhost:8080/api/rest/v10/employees?page=0&max=20
+Authorization: Basic dHVyZ2F5OnRjMTIzNA==
+Content-Type: application/json
+
+{
+}
+
+###

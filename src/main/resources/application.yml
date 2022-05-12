@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: employee-api
+  profiles:
+    active: dev
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:employeedb
+    username: sa
+    password: sa
+    hikari:
+      poolName: spring5-jdk18-hikari-pool
+      minimum-idle: 1
+      maximum-pool-size: 5
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    database-change-log-lock-table: employee_db_changelog_lock
+    database-change-log-table: employee_db_changelog
+    enabled: true
+
+server:
+  port: 8080
+
+logging:
+  config: classpath:logs/log4j2.xml
+
