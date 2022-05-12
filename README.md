@@ -1,7 +1,9 @@
 # spring5 & jdk 18
 
-    Experimental spring api project
+ Experimental spring api project.
+
     It includes;
+    
         - project structe
         - exception handling
         - example restcontroller (create, paginated list apis)
