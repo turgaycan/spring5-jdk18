@@ -102,8 +102,10 @@ if [[ "${newVersion}" = "true" ]]; then
   git push
   git push --tags
 fi
-
-docker login -u "${REPOSITORY_USER}" -p "${REPOSITORY_PASS}" "${REPOSITORY}"
+# by pass login command for local registry
+if [[ "${REPOSITORY}" != "localhost:5000" ]]; then
+   docker login -u "${REPOSITORY_USER}" -p "${REPOSITORY_PASS}" "${REPOSITORY}"
+fi
 
 # tag the image in local registry
 docker tag "${IMAGE_USER}/${IMAGE_NAME}:latest" "${REPOSITORY}/${IMAGE_USER}/${IMAGE_NAME}:latest"
