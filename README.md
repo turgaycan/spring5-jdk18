@@ -9,6 +9,8 @@
         - spring security based authentication / authorization
         - API http curl requests
         - Example data scripts
+        - Docker file & shell scripts
+        - Code & Image versioning (semantic method)
 
 # build & push to image local or remote docker registry 
 
