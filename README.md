@@ -4,7 +4,6 @@
 
     It includes;
     
-        - project structe
         - exception handling
         - example restcontroller (create, paginated list apis)
         - spring security based authentication / authorization
